@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💎 SOHAIB AGENCY HUB
+# 💎 ZAIN TOOLS HUB
 ### Next.js 16 (Turbopack) • Tailwind CSS • Supabase • 3D Glassmorphism UI
 **Ultra-Fast, Secure Digital & AI Services eCommerce & Web Tools Platform**
 
@@ -17,7 +17,7 @@
 
 ## 🌟 Overview & Key Features
 
-**Sohaib Agency Hub** is a full-stack, enterprise-grade digital services marketplace, AI tools portal, and automated admin management ecosystem:
+**Zain Tools Hub** is a full-stack, enterprise-grade digital services marketplace, AI tools portal, and automated admin management ecosystem:
 
 1. **🎨 3D Acrylic Glassmorphism Storefront**:
    - Modern, high-retention responsive design with interactive glow orbs and plush badges.
@@ -47,8 +47,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/saqibteamwork-rgb/sohaibagencyhub.git sohaibagencyhub
-cd sohaibagencyhub
+git clone https://github.com/saqibteamwork-rgb/zaintools.git zaintools
+cd zaintools
 npm install
 ```
 
@@ -71,7 +71,7 @@ IMAGEKIT_PRIVATE_KEY="private_XiedF7mU8mxbGCLOnLcvgyTByE8="
 
 # Admin JWT Secret & Domain Whitelist
 ADMIN_JWT_SECRET="super_secure_random_jwt_secret_token_here_2026"
-ALLOWED_DOMAINS="localhost,sohaibagencyhub.vercel.app"
+ALLOWED_DOMAINS="localhost,zaintools.vercel.app"
 DISABLE_KILLSWITCH="true"
 ```
 
@@ -111,6 +111,6 @@ Open [http://localhost:3000](http://localhost:3000) (or [http://localhost:3001](
 ## 👨‍💻 Developer & Credits
 
 - **Developer**: Muhammad Saqib
-- **Platform**: Sohaib Agency Hub
+- **Platform**: Zain Tools Hub
 - **WhatsApp Support**: [+92 347 8936242](https://wa.me/923478936242)
 - **Attribution**: Permanent Developer Signature — `Made with ❤️ by Muhammad Saqib`

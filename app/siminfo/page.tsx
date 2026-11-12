@@ -7,10 +7,10 @@ export const revalidate = 0;
 
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
-  const origin = process.env.APP_URL || 'https://sohaibagencyhub.vercel.app';
+  const origin = process.env.APP_URL || 'https://zaintools.vercel.app';
   const canonical = `${origin}/siminfo`;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
-  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Sohaib';
+  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Zain';
   const fullBrand = `${brandOwner} ${siteConfig.banner?.highlightTitle?.trim() || 'Agency Hub'}`.trim();
   const brand = siteConfig.footer?.brandName || fullBrand;
 

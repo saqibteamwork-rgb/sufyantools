@@ -314,7 +314,7 @@ VALUES
 ('rev-seed-06', 'Daniyal Sheikh (Multan)', 'ChatGPT Plus (GPT-4o / o3)', 5, 'Official workspace login mila, koi account ban ya captcha issue nahi aya. Customer support bohat fast aur cooperative hai. Shukriya!', true, 'approved', now() - interval '1 day'),
 ('rev-seed-07', 'Arham Raza (Peshawar)', 'Canva Pro (Lifetime Access)', 5, 'Graphic designing ke liye Canva Pro lifetime access activate karwaya. Premium templates, brand kits aur background remover sab smoothly unlocked hain.', true, 'approved', now() - interval '1 day 4 hours'),
 ('rev-seed-08', 'Farhan Siddiqui (Sialkot)', 'ElevenLabs 300k Voice Credits', 5, 'Faceless YouTube channel ke liye ElevenLabs voice cloning credits liye. Credits expire nahi hote aur audio quality studio-grade hai. Best investment!', true, 'approved', now() - interval '2 days'),
-('rev-seed-09', 'Saad Malik (Gujranwala)', 'SMM YouTube & Insta Growth', 5, 'Non-drop organic engagement service, safe drop guarantee aur instant start. Sohaib Agency Hub Pakistan ka sab se trusted platform hai!', true, 'approved', now() - interval '2 days 6 hours')
+('rev-seed-09', 'Saad Malik (Gujranwala)', 'SMM YouTube & Insta Growth', 5, 'Non-drop organic engagement service, safe drop guarantee aur instant start. Zain Tools Hub Pakistan ka sab se trusted platform hai!', true, 'approved', now() - interval '2 days 6 hours')
 ON CONFLICT (id) DO UPDATE 
 SET name = EXCLUDED.name, service = EXCLUDED.service, rating = EXCLUDED.rating, comment = EXCLUDED.comment, verified = EXCLUDED.verified, status = EXCLUDED.status;
 ```

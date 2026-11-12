@@ -254,15 +254,15 @@ export interface SiteSeoConfig {
 }
 
 export const DEFAULT_SITE_SEO: SiteSeoConfig = {
-  metaTitle: 'Sohaib Agency Hub — Digital & AI Services, SMM Store & Web Tools',
+  metaTitle: 'Zain Tools Hub — Digital & AI Services, SMM Store & Web Tools',
   metaDescription: 'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Muhammad Saqib.',
   keywords: 'Muhammad Saqib, Saqib Visuals, CapCut Pro Pakistan, SMM Panel Pakistan, Lovable Pro Account, Gemini 18M Pro, ChatGPT Plus & Claude, Pak SIM Database Live, SIM Tracker 2026, NADRA Verification FRC, TikTok Agency Accounts UK USA, Fast USDT EasyPaisa Delivery',
-  author: 'Sohaib Agency',
-  canonicalUrl: 'https://sohaibagencyhub.vercel.app',
+  author: 'Zain Tools',
+  canonicalUrl: 'https://zaintools.vercel.app',
   robotsIndex: true,
   robotsFollow: true,
   ogType: 'website',
-  ogTitle: 'Sohaib Agency Hub — Digital & AI Services & SMM Store',
+  ogTitle: 'Zain Tools Hub — Digital & AI Services & SMM Store',
   ogDescription: 'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Muhammad Saqib.',
   ogImageUrl: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
   twitterCard: 'summary_large_image',
@@ -319,7 +319,7 @@ export interface SiteStoreBarsConfig {
 
 export const DEFAULT_STORE_BARS_CONFIG: SiteStoreBarsConfig = {
   showStatusPulseBar: true,
-  statusPanelTitle: 'SOHAIB AGENCY LIVE PANEL STATUS:',
+  statusPanelTitle: 'ZAIN TOOLS LIVE PANEL STATUS:',
   statusPanelBadge: 'ALL 3 SERVERS 99.9% ONLINE',
   chip1Enabled: true,
   chip1Label: 'AI Pro Server:',
@@ -472,7 +472,7 @@ export const DEFAULT_SITE_CONFIG: SiteSettingsConfig = {
     showTopStrip: true,
     showTopStripWhatsapp: true,
     rgbBorderEnabled: true,
-    topStripTitle: 'SOHAIB AGENCY • OFFICIAL HUB',
+    topStripTitle: 'ZAIN TOOLS • OFFICIAL HUB',
     showPortraitPhoto: true,
     portraitUrl: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
     showPortraitOrbitBadges: true,
@@ -491,7 +491,7 @@ export const DEFAULT_SITE_CONFIG: SiteSettingsConfig = {
     showBadgeText: true,
     badgeText: 'ALL DIGITAL, AI, SMM, FRANCHISE & NADRA SERVICES AVAILABLE',
     showMainTitle: true,
-    mainTitle: 'Sohaib ',
+    mainTitle: 'Zain ',
     highlightTitle: 'Agency Hub',
     showDescription: true,
     description:
@@ -506,13 +506,13 @@ export const DEFAULT_SITE_CONFIG: SiteSettingsConfig = {
     whatsappNumberDisplay: '+92 347 8936242',
     whatsappDefaultMessage: 'Assalam-o-Alaikum Muhammad Saqib! Mujhe apki services chahiye.',
     supportEmail: 'support@saqibvisuals.com',
-    officialWebsiteUrl: 'https://sohaibagencyhub.vercel.app',
-    officialWebsiteLabel: 'sohaibagencyhub.vercel.app',
+    officialWebsiteUrl: 'https://zaintools.vercel.app',
+    officialWebsiteLabel: 'zaintools.vercel.app',
     whatsappWidgetEnabled: true,
     whatsappWidgetName: 'Muhammad Saqib',
-    whatsappWidgetAvatar: 'https://sohaibagencyhub.vercel.app/saqib-pic.png',
-    whatsappWidgetGreeting: 'Assalam-o-Alaikum! 👋 Welcome to Sohaib Agency Hub.<br/>How can I help you today with CapCut Pro, AI Tools, TikTok Ads or Nadra services?',
-    whatsappWidgetGreetingUr: 'السلام علیکم! 👋 صہیب ایجنسی ہب میں خوش آمدید۔<br/>آج میں کیپ کٹ پرو، اے آئی ٹولز، ٹک ٹاک ایڈز یا نادرا سروسز میں آپ کی کیا مدد کر سکتا ہوں؟',
+    whatsappWidgetAvatar: 'https://zaintools.vercel.app/saqib-pic.png',
+    whatsappWidgetGreeting: 'Assalam-o-Alaikum! 👋 Welcome to Zain Tools Hub.<br/>How can I help you today with CapCut Pro, AI Tools, TikTok Ads or Nadra services?',
+    whatsappWidgetGreetingUr: 'السلام علیکم! 👋 زین ٹولز ہب میں خوش آمدید۔<br/>آج میں کیپ کٹ پرو، اے آئی ٹولز، ٹک ٹاک ایڈز یا نادرا سروسز میں آپ کی کیا مدد کر سکتا ہوں؟',
     whatsappWidgetStatus: 'Typically replies in ~2 minutes ⚡'
   },
   socials: {
@@ -527,7 +527,7 @@ export const DEFAULT_SITE_CONFIG: SiteSettingsConfig = {
     platforms: DEFAULT_SOCIAL_PLATFORMS
   },
   footer: {
-    brandName: '🚀 Sohaib Agency Hub',
+    brandName: '🚀 Zain Tools Hub',
     copyrightTagline: '24/7 Instant Delivery • 100% Full Replacement Warranty',
     showQuickLinks: true
   },
@@ -591,6 +591,6 @@ export function deepMergeSiteConfig(raw: unknown): SiteSettingsConfig {
     },
     authorizedDomains: Array.isArray(obj.authorizedDomains) && obj.authorizedDomains.length > 0
       ? obj.authorizedDomains
-      : ['localhost', '127.0.0.1', 'sohaibagencyhub.vercel.app', 'mrsaqib242.vercel.app'],
+      : ['localhost', '127.0.0.1', 'zaintools.vercel.app', 'mrsaqib242.vercel.app'],
   };
 }

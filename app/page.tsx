@@ -10,12 +10,12 @@ export const revalidate = 0;
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
   const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
-  const origin = process.env.APP_URL || 'https://sohaibagencyhub.vercel.app';
+  const origin = process.env.APP_URL || 'https://zaintools.vercel.app';
   const effectiveCanonical = seo.canonicalUrl?.trim() || origin;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
 
   return {
-    title: seo.metaTitle || 'Sohaib Agency Hub — Digital & AI Services, SMM Store & Web Tools',
+    title: seo.metaTitle || 'Zain Tools Hub — Digital & AI Services, SMM Store & Web Tools',
     description:
       seo.metaDescription ||
       'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Muhammad Saqib.',
@@ -31,16 +31,16 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: seo.robotsFollow !== false,
     },
     openGraph: {
-      title: seo.ogTitle || seo.metaTitle || 'Sohaib Agency Hub',
+      title: seo.ogTitle || seo.metaTitle || 'Zain Tools Hub',
       description: seo.ogDescription || seo.metaDescription,
       url: effectiveCanonical,
-      siteName: siteConfig.footer?.brandName || 'Sohaib Agency Hub',
+      siteName: siteConfig.footer?.brandName || 'Zain Tools Hub',
       images: [
         {
           url: seo.ogImageUrl || portrait,
           width: 1200,
           height: 630,
-          alt: seo.ogTitle || 'Sohaib Agency Hub',
+          alt: seo.ogTitle || 'Zain Tools Hub',
         },
       ],
       type: 'website',

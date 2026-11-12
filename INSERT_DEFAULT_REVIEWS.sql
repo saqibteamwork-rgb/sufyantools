@@ -1,5 +1,5 @@
 -- =========================================================================
--- SOHAIB AGENCY HUB: 9 DEFAULT VERIFIED CUSTOMER REVIEWS
+-- ZAIN TOOLS HUB: 9 DEFAULT VERIFIED CUSTOMER REVIEWS
 -- Execute this script in your Supabase SQL Editor:
 -- https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl/sql/new
 -- =========================================================================
@@ -77,7 +77,7 @@ VALUES
     'Daniyal Sheikh (Multan)',
     'ChatGPT Plus (GPT-4o / o3)',
     5,
-    'Official workspace login mila, koi account ban ya captcha issue nahi aya. Sohaib Agency ka customer support bohat fast aur cooperative hai. Shukriya!',
+    'Official workspace login mila, koi account ban ya captcha issue nahi aya. Zain Tools ka customer support bohat fast aur cooperative hai. Shukriya!',
     true,
     'approved',
     now() - interval '1 day'
@@ -107,7 +107,7 @@ VALUES
     'Saad Malik (Gujranwala)',
     'SMM YouTube & Insta Growth',
     5,
-    'Non-drop organic engagement service, safe drop guarantee aur instant start. Sohaib Agency Hub Pakistan ka sab se trusted platform hai!',
+    'Non-drop organic engagement service, safe drop guarantee aur instant start. Zain Tools Hub Pakistan ka sab se trusted platform hai!',
     true,
     'approved',
     now() - interval '2 days 6 hours'
