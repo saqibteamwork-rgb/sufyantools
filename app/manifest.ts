@@ -2,9 +2,9 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Muhammad Saqib — Saqib Visuals Hub',
-    short_name: 'Saqib Visuals',
-    description: 'Instant CapCut Pro, Lovable Pro, AI Accounts, SMM Services & SIM Info Hub by Muhammad Saqib.',
+    name: 'Sufan Tools Hub',
+    short_name: 'Sufan Tools',
+    description: 'Instant CapCut Pro, Lovable Pro, AI Accounts, SMM Services & SIM Info Hub by Sufan Tools Hub.',
     start_url: '/?source=pwa',
     scope: '/',
     display: 'standalone',

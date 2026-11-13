@@ -1,5 +1,5 @@
 # 🤖 AGENT SETUP, CHANGELOG & ARCHITECTURE GUIDE
-### Project: **Zain Tools Hub** (`saqibteamwork-rgb/zaintools`)
+### Project: **Sufan Tools Hub** (`sufantools`)
 > **Target Audience**: AI Agents (Antigravity, Cursor, Claude, GPT) & Developers working on this codebase after cloning.
 
 ---
@@ -8,31 +8,30 @@
 
 | Property | Value |
 |---|---|
-| **Project Name** | Zain Tools Hub |
-| **Brand Identity** | Zain Tools Hub — Digital & AI Services, SMM Store & Web Tools |
+| **Project Name** | Sufan Tools Hub |
+| **Brand Identity** | Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools |
 | **Developer Attribution** | Permanent Footer Attribution: `Made with ❤️ by Muhammad Saqib` |
 | **Framework** | Next.js 16.4.2 (App Router + Turbopack) |
 | **Language & Styling** | TypeScript 7 + React 19 + Tailwind CSS 4 |
-| **Database** | Supabase Cloud PostgreSQL (Project ID: `yxrtmnnndhroqbyhmnyl`) |
+| **Database** | Supabase Cloud PostgreSQL (Project ID: `fmmludlnwtqddsvjrxmr`) |
 | **CDN / Uploads** | ImageKit CDN (`https://ik.imagekit.io/ws9mlpwdsj`) |
-| **Live Production Domain**| `https://zaintools.vercel.app/` |
-| **GitHub Repository** | `https://github.com/saqibteamwork-rgb/zaintools` |
+| **Live Production Domain**| `https://sufantools.vercel.app/` |
 
 ---
 
 ## 🔄 2. Complete Changelog (What Was Modified & Why)
 
-### A. Branding Rebranding (Saqib Visuals Hub ➡️ Zain Tools Hub)
-Per client instructions, all client-facing branding was updated to **Zain Tools Hub**, while preserving the developer attribution in the footer:
+### A. Branding Rebranding (Zain Tools Hub ➡️ Sufan Tools Hub)
+All client-facing branding has been updated to **Sufan Tools Hub**, while preserving developer attribution in the footer:
 - **`data/site_config.json`**:
-  - `topStripTitle` set to `"ZAIN TOOLS • OFFICIAL HUB"`.
-  - `mainTitle` set to `"Zain "`, `highlightTitle` set to `"Agency Hub"`.
-  - `footer.brandName` set to `"🚀 Zain Tools Hub"`.
-  - `seo.metaTitle` and `seo.ogTitle` set to `"Zain Tools Hub — Digital & AI Services, SMM Store & Web Tools"`.
-  - WhatsApp widget greetings updated to Zain Tools.
-  - Payment method accounts updated to `"Zain Tools"`.
+  - `topStripTitle` set to `"SUFAN TOOLS OFFICIAL HUB"`.
+  - `mainTitle` set to `"𝙎𝙐𝙁𝘼𝙉 𝙏𝙊𝙊𝙇𝙎 "`, `highlightTitle` set to `"𝙃𝙐𝘽"`.
+  - `footer.brandName` set to `"🚀 Sufan Tools Hub"`.
+  - `seo.metaTitle` and `seo.ogTitle` set to `"Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools"`.
+  - WhatsApp widget greetings updated to Sufan Tools Hub.
+  - Payment method accounts updated to `"Sufan Tools"`.
 - **`src/types/siteConfig.ts`**:
-  - Default fallbacks for `DEFAULT_SITE_SEO`, `DEFAULT_SITE_CONFIG`, and `DEFAULT_STORE_BARS_CONFIG` updated to Zain Tools Hub.
+  - Default fallbacks for `DEFAULT_SITE_SEO`, `DEFAULT_SITE_CONFIG`, and `DEFAULT_STORE_BARS_CONFIG` updated to Sufan Tools Hub.
 - **`src/App.tsx`**:
   - Default fallback for `brandOwnerName` set to `'Zain'` and `brandAccentName` set to `'Agency Hub'`.
   - Permanent developer attribution kept in footer: `Made with ❤️ by Muhammad Saqib`.

@@ -306,10 +306,10 @@ export const AdminAnalyticsDashboard: React.FC<AdminAnalyticsDashboardProps> = (
       },
       {
         id: 'tab_about',
-        title: 'About Zain Tools Page (/about)',
+        title: 'About Sufan Tools Page (/about)',
         category: 'navigation',
         categoryLabel: 'Navigation & Routes',
-        description: 'Official biography, badges, and background of Zain Tools Hub.',
+        description: 'Official biography, badges, and background of Sufan Tools Hub.',
         isEnabled: siteConfig.visibility?.showAboutTab !== false,
         targetScreen: 'visibility',
         onToggle: () => {

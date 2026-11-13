@@ -71,7 +71,7 @@ export const DEFAULT_REVIEWS: ReviewData[] = [
     service: 'ChatGPT Plus (GPT-4o / o3)',
     rating: 5,
     comment:
-      'Official workspace login mila, koi account ban ya captcha issue nahi aya. Zain Tools ka customer support bohat fast aur cooperative hai. Shukriya!',
+      'Official workspace login mila, koi account ban ya captcha issue nahi aya. Sufan Tools ka customer support bohat fast aur cooperative hai. Shukriya!',
     verified: true,
     status: 'approved',
     created_at: new Date(Date.now() - 86400000).toISOString()
@@ -104,7 +104,7 @@ export const DEFAULT_REVIEWS: ReviewData[] = [
     service: 'SMM YouTube & Insta Growth',
     rating: 5,
     comment:
-      'Non-drop organic engagement service, safe drop guarantee aur instant start. Zain Tools Hub Pakistan ka sab se trusted platform hai!',
+      'Non-drop organic engagement service, safe drop guarantee aur instant start. Sufan Tools Hub Pakistan ka sab se trusted platform hai!',
     verified: true,
     status: 'approved',
     created_at: new Date(Date.now() - 86400000 * 2.5).toISOString()

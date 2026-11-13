@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💎 ZAIN TOOLS HUB
+# 💎 SUFAN TOOLS HUB
 ### Next.js 16 (Turbopack) • Tailwind CSS • Supabase • 3D Glassmorphism UI
 **Ultra-Fast, Secure Digital & AI Services eCommerce & Web Tools Platform**
 
@@ -17,7 +17,7 @@
 
 ## 🌟 Overview & Key Features
 
-**Zain Tools Hub** is a full-stack, enterprise-grade digital services marketplace, AI tools portal, and automated admin management ecosystem:
+**Sufan Tools Hub** is a full-stack, enterprise-grade digital services marketplace, AI tools portal, and automated admin management ecosystem:
 
 1. **🎨 3D Acrylic Glassmorphism Storefront**:
    - Modern, high-retention responsive design with interactive glow orbs and plush badges.
@@ -111,6 +111,6 @@ Open [http://localhost:3000](http://localhost:3000) (or [http://localhost:3001](
 ## 👨‍💻 Developer & Credits
 
 - **Developer**: Muhammad Saqib
-- **Platform**: Zain Tools Hub
+- **Platform**: Sufan Tools Hub
 - **WhatsApp Support**: [+92 347 8936242](https://wa.me/923478936242)
 - **Attribution**: Permanent Developer Signature — `Made with ❤️ by Muhammad Saqib`

@@ -151,7 +151,7 @@ export const TRANSLATIONS: Record<SupportedLang, TranslationDictionary> = {
     mobileMenuClose: 'Close',
     langToggleLabel: 'Language / زبان:',
 
-    footerTagline: 'Muhammad Saqib — Saqib Visuals Hub • Pakistan’s Trusted Digital Store',
+    footerTagline: 'Sufan Tools Hub • Pakistan’s Trusted Digital Store',
     footerRights: 'All Rights Reserved • Fast 24/7 WhatsApp Activation',
     badgeInstant: '⚡ Instant Delivery',
     badgeVerified: '✓ Verified Official',
@@ -223,7 +223,7 @@ export const TRANSLATIONS: Record<SupportedLang, TranslationDictionary> = {
     mobileMenuClose: 'بند کریں',
     langToggleLabel: 'زبان / Language:',
 
-    footerTagline: 'محمد ثاقب — ثاقب ویژولز ہب • پاکستان کا بااعتماد ڈیجیٹل سٹور',
+    footerTagline: 'سفیان ٹولز ہب • پاکستان کا بااعتماد ڈیجیٹل سٹور',
     footerRights: 'جملہ حقوق محفوظ ہیں • 24/7 فوری واٹس ایپ سروس',
     badgeInstant: '⚡ فوری ڈیلیوری',
     badgeVerified: '✓ تصدیق شدہ',

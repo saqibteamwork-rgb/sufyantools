@@ -9,10 +9,10 @@ export const revalidate = 0;
 // Dynamic Server-Side Generated SEO Metadata for VIP Login & Wallet Portal
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
-  const origin = process.env.APP_URL || 'https://zaintools.vercel.app';
+  const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const effectiveCanonical = `${origin}/login`;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
-  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Zain';
+  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Sufan';
   const fullBrand = `${brandOwner} ${siteConfig.banner?.highlightTitle?.trim() || 'Agency Hub'}`.trim();
   const brand = siteConfig.footer?.brandName || fullBrand;
 

@@ -10,19 +10,19 @@ export const revalidate = 0;
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
   const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
-  const origin = process.env.APP_URL || 'https://zaintools.vercel.app';
+  const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const effectiveCanonical = seo.canonicalUrl?.trim() || origin;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
 
   return {
-    title: seo.metaTitle || 'Zain Tools Hub — Digital & AI Services, SMM Store & Web Tools',
+    title: seo.metaTitle || 'Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools',
     description:
       seo.metaDescription ||
-      'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Muhammad Saqib.',
+      'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Sufan Tools Hub.',
     keywords:
       seo.keywords ||
-      'Muhammad Saqib, Saqib Visuals, CapCut Pro Pakistan, SMM Panel Pakistan, Lovable Pro Account, Gemini 18M Pro, ChatGPT Plus, SIM Database Live, NADRA Verification, TikTok Agency Accounts',
-    authors: [{ name: seo.author || 'Muhammad Saqib' }],
+      'Sufan Tools, Sufan Tools Hub, Sufyan Tools, CapCut Pro Pakistan, SMM Panel Pakistan, Lovable Pro Account, Gemini 18M Pro, ChatGPT Plus, SIM Database Live, NADRA Verification, TikTok Agency Accounts',
+    authors: [{ name: seo.author || 'Sufan Tools' }],
     alternates: {
       canonical: effectiveCanonical,
     },
@@ -31,16 +31,16 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: seo.robotsFollow !== false,
     },
     openGraph: {
-      title: seo.ogTitle || seo.metaTitle || 'Zain Tools Hub',
+      title: seo.ogTitle || seo.metaTitle || 'Sufan Tools Hub',
       description: seo.ogDescription || seo.metaDescription,
       url: effectiveCanonical,
-      siteName: siteConfig.footer?.brandName || 'Zain Tools Hub',
+      siteName: siteConfig.footer?.brandName || 'Sufan Tools Hub',
       images: [
         {
           url: seo.ogImageUrl || portrait,
           width: 1200,
           height: 630,
-          alt: seo.ogTitle || 'Zain Tools Hub',
+          alt: seo.ogTitle || 'Sufan Tools Hub',
         },
       ],
       type: 'website',

@@ -212,6 +212,7 @@ export function proxy(request: NextRequest) {
 
         // Read dynamically configured allowed domains from environment (for multiple client sales/clones)
         const envAllowedDomains = [
+        'sufantools.vercel.app',
         'zaintools.vercel.app',
         'localhost',
         '127.0.0.1',

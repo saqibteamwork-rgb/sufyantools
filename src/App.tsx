@@ -374,7 +374,7 @@ export default function App({
   }, []);
 
   // Dynamic White-Label Brand & Owner Names (Synced automatically from Hero Title)
-  const brandOwnerName = siteConfig.banner?.mainTitle?.trim() || 'Zain';
+  const brandOwnerName = siteConfig.banner?.mainTitle?.trim() || 'Sufan';
   const brandAccentName = siteConfig.banner?.highlightTitle?.trim().replace(/^[—\-\s]+/, '') || 'Saqib Visuals';
   const fullBrandTitle = `${brandOwnerName} ${siteConfig.banner?.highlightTitle?.trim() || ''}`.trim();
 
@@ -478,7 +478,7 @@ export default function App({
     setMetaTag('og:type', seo.ogType || 'website', true);
     setMetaTag('og:url', effectiveCanonical, true);
     setMetaTag('og:image', seo.ogImageUrl || siteConfig.banner.portraitUrl || '', true);
-    setMetaTag('og:site_name', siteConfig.footer.brandName || 'Zain Tools Hub', true);
+    setMetaTag('og:site_name', siteConfig.footer.brandName || 'Sufan Tools Hub', true);
 
     // Twitter / X Tags
     setMetaTag('twitter:card', seo.twitterCard || 'summary_large_image');
@@ -498,14 +498,14 @@ export default function App({
     const schemaJson = {
       '@context': 'https://schema.org',
       '@type': seo.schemaType || 'WebApplication',
-      name: seo.metaTitle || 'Zain Tools Hub',
+      name: seo.metaTitle || 'Sufan Tools Hub',
       description: seo.metaDescription || '',
       url: effectiveCanonical,
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'All',
       author: {
         '@type': 'Person',
-        name: seo.author || 'Zain Tools'
+        name: seo.author || 'Sufan Tools'
       }
     };
     scriptTag.text = JSON.stringify(schemaJson);
@@ -2858,7 +2858,7 @@ export default function App({
                     ✨
                   </span>
                   <h1 className="title-3d-blue text-xs sm:text-3xl font-bold tracking-wider uppercase truncate">
-                    {siteLang === 'ur' ? 'زین ایجنسی • آفیشل ہب' : effectiveTopStripTitle}
+                    {siteLang === 'ur' ? 'سفیان ایجنسی • آفیشل ہب' : effectiveTopStripTitle}
                   </h1>
                 </div>
                 {siteConfig.banner.showTopStripWhatsapp !== false && (
@@ -3068,7 +3068,7 @@ export default function App({
                     {/* Main Title & Highlight */}
                     {siteConfig.banner.showMainTitle !== false && (
                       <h2 className="text-xl sm:text-2xl md:text-[26px] font-extrabold text-slate-900 tracking-tight leading-snug">
-                        {siteLang === 'ur' ? 'زین — ایجنسی ہب' : siteConfig.banner.mainTitle}{' '}
+                        {siteLang === 'ur' ? 'سفیان — ایجنسی ہب' : siteConfig.banner.mainTitle}{' '}
                         {siteLang === 'ur' ? (
                           <span className="text-pink-600 font-display">
                             (پریمیم ڈیجیٹل سٹور)

@@ -3,7 +3,7 @@ import { getServerStoreData } from '@/src/lib/serverDataLoader';
 import AdminPortalClient from './AdminPortalClient';
 
 export const metadata: Metadata = {
-  title: 'Zain Tools — Admin Security Vault',
+  title: 'Sufan Tools — Admin Security Vault',
   description: 'Cryptographically protected admin management portal.',
   robots: {
     index: false,

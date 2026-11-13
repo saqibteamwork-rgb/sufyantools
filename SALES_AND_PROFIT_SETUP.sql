@@ -1,5 +1,5 @@
 -- =========================================================================
--- ZAIN TOOLS HUB: SALES, REVENUE & NET PROFIT SYSTEM MIGRATION
+-- SUFAN TOOLS HUB: SALES, REVENUE & NET PROFIT SYSTEM MIGRATION
 -- Execute in Supabase SQL Editor:
 -- https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl/sql/new
 -- =========================================================================

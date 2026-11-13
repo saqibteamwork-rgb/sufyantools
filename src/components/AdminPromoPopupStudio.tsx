@@ -112,7 +112,7 @@ export const AdminPromoPopupStudio: React.FC<Props> = ({
         couponCode: '',
         showCoupon: false,
         showCountdown: false,
-        primaryBtnText: 'Contact Zain Tools',
+        primaryBtnText: 'Contact Sufan Tools',
         primaryBtnAction: 'whatsapp',
         secondaryBtnText: 'Close Notice',
         showOncePerSession: true,

@@ -10,10 +10,10 @@ export const revalidate = 0;
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
   const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
-  const origin = process.env.APP_URL || 'https://zaintools.vercel.app';
+  const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const effectiveCanonical = `${origin}/contact`;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
-  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Zain';
+  const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Sufan';
   const fullBrand = `${brandOwner} ${siteConfig.banner?.highlightTitle?.trim() || 'Agency Hub'}`.trim();
   const brand = siteConfig.footer?.brandName || fullBrand;
   const waDisplay = siteConfig.contact?.whatsappNumberDisplay || '+92 347 8936242';

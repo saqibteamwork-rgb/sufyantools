@@ -1513,7 +1513,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden border-2 border-emerald-400 shadow-lg flex-shrink-0 bg-slate-900">
                 <img
                   src={siteConfig.banner.portraitUrl}
-                  alt="Zain Admin"
+                  alt="Sufan Admin"
                   className="w-full h-full object-cover"
                 />
                 <span className="absolute bottom-1 right-1 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-950"></span>
@@ -2902,7 +2902,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
           <h3 className="text-xl font-black text-slate-900 mb-2">🔒 Permission Restricted</h3>
           <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
             Aapka sub-admin account (<code className="font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded">{currentAdminUser}</code>) is system ko manage karne ki permission nahi rakhta.
-            Ise open ya edit karne ke liye Superadmin (<b className="text-indigo-600">Zain</b>) se access enable karwayein.
+            Ise open ya edit karne ke liye Superadmin (<b className="text-indigo-600">Sufan</b>) se access enable karwayein.
           </p>
           <button
             type="button"
@@ -4553,7 +4553,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                             </h4>
                             <p className="text-xs font-medium text-slate-700">
                               {toolDesc ||
-                                'Instant online digital utility powered by Zain.'}
+                                'Instant online digital utility powered by Sufan.'}
                             </p>
                           </div>
 
@@ -5054,7 +5054,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                         }))
                       }
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border-2 border-pink-300 font-bold text-xs sm:text-sm text-slate-900 shadow-inner"
-                      placeholder="e.g. ZAIN TOOLS • OFFICIAL HUB"
+                      placeholder="e.g. SUFAN TOOLS • OFFICIAL HUB"
                     />
                   </div>
                 )}
@@ -5175,7 +5175,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                                   }
                                 }}
                                 className="w-full px-3.5 py-2 rounded-xl bg-white border-2 border-pink-300 font-bold text-xs sm:text-sm text-slate-900 shadow-inner"
-                              placeholder="e.g. Zain"
+                              placeholder="e.g. Sufan"
                             />
                           </div>
                           <div>
@@ -5663,7 +5663,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                     shape="circle"
                     presets={[
                       {
-                        label: 'Zain Official Pic',
+                        label: 'Sufan Official Pic',
                         url: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
                       },
                       {
@@ -7161,7 +7161,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                       </label>
                       <input
                         type="text"
-                        value={siteConfig.storeBars?.statusPanelTitle ?? 'ZAIN TOOLS LIVE PANEL STATUS:'}
+                        value={siteConfig.storeBars?.statusPanelTitle ?? 'SUFAN TOOLS LIVE PANEL STATUS:'}
                         onChange={(e) =>
                           onUpdateSiteConfig((prev) => ({
                             ...prev,
@@ -7172,7 +7172,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                           }))
                         }
                         className="w-full px-3 py-2 rounded-xl bg-white border-2 border-indigo-300 font-bold text-xs text-slate-900 shadow-inner"
-                        placeholder="e.g. ZAIN TOOLS LIVE PANEL STATUS:"
+                        placeholder="e.g. SUFAN TOOLS LIVE PANEL STATUS:"
                       />
                     </div>
                     <div>
@@ -7362,7 +7362,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 server-pulse-dot"></span>
                       <span className="font-display font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                        {siteConfig.storeBars?.statusPanelTitle ?? 'ZAIN TOOLS LIVE PANEL STATUS:'}
+                        {siteConfig.storeBars?.statusPanelTitle ?? 'SUFAN TOOLS LIVE PANEL STATUS:'}
                       </span>
                       <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-[10px] border border-emerald-300">
                         {siteConfig.storeBars?.statusPanelBadge ?? 'ALL 3 SERVERS 99.9% ONLINE'}
@@ -7977,7 +7977,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                                 e.target.value
                               )
                             }
-                            placeholder="e.g. Zain"
+                            placeholder="e.g. Sufan"
                             className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border-2 border-emerald-300 font-bold text-xs sm:text-sm text-slate-900"
                           />
                         </div>
@@ -8538,7 +8538,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                       <span className="w-7 h-7 rounded-lg bg-pink-600 text-white flex items-center justify-center text-xs font-bold">
                         MS
                       </span>
-                      <span className="text-xs font-extrabold text-white">Zain Tools</span>
+                      <span className="text-xs font-extrabold text-white">Sufan Tools</span>
                     </div>
 
                     {(siteConfig.storeBars?.showHeaderWalletPill ?? activeVisibility.showHeaderWalletPill) ? (
@@ -8900,7 +8900,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                             contact: { ...prev.contact, whatsappWidgetName: e.target.value }
                           }))
                         }
-                        placeholder="Zain"
+                        placeholder="Sufan"
                         className="w-full px-3 py-2 rounded-xl bg-white border border-emerald-300 font-bold text-xs text-slate-900"
                       />
                     </div>
@@ -8922,7 +8922,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                         shape="circle"
                         presets={[
                           {
-                            label: 'Zain Official Pic',
+                            label: 'Sufan Official Pic',
                             url: 'https://testuisaqib.vercel.app/saqib-pic.png',
                           },
                         ]}
@@ -8964,7 +8964,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                             contact: { ...prev.contact, whatsappWidgetGreeting: e.target.value }
                           }))
                         }
-                        placeholder="Assalam-o-Alaikum! Welcome to Zain Tools Hub..."
+                        placeholder="Assalam-o-Alaikum! Welcome to Sufan Tools Hub..."
                         className="w-full px-3 py-2 rounded-xl bg-white border border-emerald-300 font-medium text-xs text-slate-900"
                       />
                     </div>
@@ -9372,7 +9372,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                           footer: { ...prev.footer, brandName: e.target.value }
                         }))
                       }
-                      placeholder="🚀 Zain Tools Hub"
+                      placeholder="🚀 Sufan Tools Hub"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border-2 border-indigo-300 font-bold text-xs sm:text-sm text-slate-900"
                     />
                   </div>
@@ -9720,7 +9720,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                       },
                       {
                         key: 'showAboutTab' as const,
-                        title: 'Navigation Tab: About Zain',
+                        title: 'Navigation Tab: About Sufan',
                         desc: 'Show or hide About tab in Header & Mobile menu'
                       },
                       {
