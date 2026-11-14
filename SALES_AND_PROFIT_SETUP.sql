@@ -1,7 +1,7 @@
 -- =========================================================================
 -- SUFAN TOOLS HUB: SALES, REVENUE & NET PROFIT SYSTEM MIGRATION
 -- Execute in Supabase SQL Editor:
--- https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl/sql/new
+-- https://supabase.com/dashboard/project/fmmludlnwtqddsvjrxmr/sql/new
 -- =========================================================================
 
 -- 1. UPGRADE ORDERS TABLE WITH COST & PROFIT FIELDS

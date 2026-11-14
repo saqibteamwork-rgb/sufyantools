@@ -1,7 +1,7 @@
 -- =========================================================================
 -- SUFAN TOOLS HUB: REVIEWS MODERATION & ADMIN NOTIFICATIONS MIGRATION
 -- Execute this script directly in your Supabase SQL Editor:
--- https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl/sql/new
+-- https://supabase.com/dashboard/project/fmmludlnwtqddsvjrxmr/sql/new
 -- =========================================================================
 
 -- 1. UPGRADE REVIEWS TABLE TO SUPPORT MODERATION STATUS

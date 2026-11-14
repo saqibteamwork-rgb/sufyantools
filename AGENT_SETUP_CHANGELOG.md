@@ -73,7 +73,7 @@ The template contains an anti-clone / anti-scraper DRM system (`proxy.ts` and `A
 
 ### Dual-Layer Fallback Architecture
 The project uses a dual-layer persistence system:
-1. **Primary Layer**: Live Supabase PostgreSQL database (`yxrtmnnndhroqbyhmnyl.supabase.co`).
+1. **Primary Layer**: Live Supabase PostgreSQL database (`fmmludlnwtqddsvjrxmr.supabase.co`).
 2. **Fallback Layer**: Server disk JSON (`data/site_config.json`) and in-memory static catalog (`src/data/defaultCatalog.ts`).
    - If Supabase tables have not been created yet or connection is slow, Next.js SSR serves the site from `data/site_config.json` without failing.
 
@@ -87,8 +87,8 @@ Example Response:
 {
   "status": "CONNECTED_OK",
   "is_configured": true,
-  "project_id": "yxrtmnnndhroqbyhmnyl",
-  "database_url": "https://yxrtmnnndhroqbyhmnyl.supabase.co",
+  "project_id": "fmmludlnwtqddsvjrxmr",
+  "database_url": "https://fmmludlnwtqddsvjrxmr.supabase.co",
   "has_anon_key": true,
   "has_service_role_key": true
 }
@@ -97,7 +97,7 @@ Example Response:
 ### ⚠️ IMPORTANT: How to Initialize Tables in Supabase (1-Click SQL)
 If Supabase shows error `PGRST205` (*"Could not find the table 'public.services' in the schema cache"*), it means the tables have not been created yet.
 **To fix this**:
-1. Open the [Supabase Dashboard](https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl).
+1. Open the [Supabase Dashboard](https://supabase.com/dashboard/project/fmmludlnwtqddsvjrxmr).
 2. Go to **SQL Editor** -> Click **New Query**.
 3. Copy the entire contents of [`master_query.sql`](./master_query.sql) and paste it.
 4. Click **Run**.
@@ -109,9 +109,9 @@ If Supabase shows error `PGRST205` (*"Could not find the table 'public.services'
 
 ```env
 # ==================== SUPABASE DATABASE CONFIG ====================
-NEXT_PUBLIC_SUPABASE_URL="https://yxrtmnnndhroqbyhmnyl.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_zxWbdEwa9TLZ64JYA0roxw_fqVf0OuQ"
-SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+NEXT_PUBLIC_SUPABASE_URL="https://fmmludlnwtqddsvjrxmr.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_v2wCEnLHEYFjTfQX5pxQtQ_cbfIrC-v"
+SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZtbWx1ZGxud3RxZGRzdmpyeG1yIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5NDU0MDEzMywiZXhwIjoyMTEwMTE2MTMzfQ.gPTVf8pmG-rBrDNUcmVPgQWqz6Xk4z91ZC3UkD7Hxyw"
 
 # ==================== IMAGEKIT CDN CONFIG ====================
 NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY="public_hAsIn5Rl4yEptvRhS++GoJeO9ck="
@@ -119,8 +119,8 @@ NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT="https://ik.imagekit.io/ws9mlpwdsj"
 IMAGEKIT_PRIVATE_KEY="private_XiedF7mU8mxbGCLOnLcvgyTByE8="
 
 # ==================== APP URL & AI ====================
-APP_URL="https://zaintools.vercel.app"
-NEXT_PUBLIC_APP_URL="https://zaintools.vercel.app"
+APP_URL="https://sufantools.vercel.app"
+NEXT_PUBLIC_APP_URL="https://sufantools.vercel.app"
 
 # ==================== ADMIN SECURITY VAULT ====================
 ADMIN_JWT_SECRET="super_secure_random_jwt_secret_token_here_2026"

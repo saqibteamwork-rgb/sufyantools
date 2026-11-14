@@ -1,7 +1,7 @@
 -- =========================================================================
 -- SUFAN TOOLS HUB: 9 DEFAULT VERIFIED CUSTOMER REVIEWS
 -- Execute this script in your Supabase SQL Editor:
--- https://supabase.com/dashboard/project/yxrtmnnndhroqbyhmnyl/sql/new
+-- https://supabase.com/dashboard/project/fmmludlnwtqddsvjrxmr/sql/new
 -- =========================================================================
 
 -- Ensure reviews table has status column

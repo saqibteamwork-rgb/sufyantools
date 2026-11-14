@@ -47,8 +47,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/saqibteamwork-rgb/zaintools.git zaintools
-cd zaintools
+git clone https://github.com/saqibteamwork-rgb/sufyantools.git sufyantools
+cd sufyantools
 npm install
 ```
 
@@ -60,9 +60,9 @@ cp .env.example .env.local
 
 Fill in your Supabase project credentials in `.env.local`:
 ```env
-NEXT_PUBLIC_SUPABASE_URL="https://yxrtmnnndhroqbyhmnyl.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="your-anon-key"
-SUPABASE_SERVICE_ROLE_KEY="your-service-role-key"
+NEXT_PUBLIC_SUPABASE_URL="https://fmmludlnwtqddsvjrxmr.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_v2wCEnLHEYFjTfQX5pxQtQ_cbfIrC-v"
+SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZtbWx1ZGxud3RxZGRzdmpyeG1yIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5NDU0MDEzMywiZXhwIjoyMTEwMTE2MTMzfQ.gPTVf8pmG-rBrDNUcmVPgQWqz6Xk4z91ZC3UkD7Hxyw"
 
 # ImageKit (Optional for asset uploads)
 NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY="public_hAsIn5Rl4yEptvRhS++GoJeO9ck="
@@ -71,7 +71,8 @@ IMAGEKIT_PRIVATE_KEY="private_XiedF7mU8mxbGCLOnLcvgyTByE8="
 
 # Admin JWT Secret & Domain Whitelist
 ADMIN_JWT_SECRET="super_secure_random_jwt_secret_token_here_2026"
-ALLOWED_DOMAINS="localhost,zaintools.vercel.app"
+ADMIN_USERNAME="sufyan"
+ALLOWED_DOMAINS="localhost,sufantools.vercel.app"
 DISABLE_KILLSWITCH="true"
 ```
 
