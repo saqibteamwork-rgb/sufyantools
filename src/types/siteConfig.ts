@@ -264,7 +264,7 @@ export const DEFAULT_SITE_SEO: SiteSeoConfig = {
   ogType: 'website',
   ogTitle: 'Sufan Tools Hub — Digital & AI Services & SMM Store',
   ogDescription: 'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Muhammad Saqib.',
-  ogImageUrl: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
+  ogImageUrl: 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png',
   twitterCard: 'summary_large_image',
   twitterCreator: '@mrsaqib242',
   schemaType: 'WebApplication'
@@ -474,7 +474,7 @@ export const DEFAULT_SITE_CONFIG: SiteSettingsConfig = {
     rgbBorderEnabled: true,
     topStripTitle: 'SUFAN TOOLS • OFFICIAL HUB',
     showPortraitPhoto: true,
-    portraitUrl: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
+    portraitUrl: 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png',
     showPortraitOrbitBadges: true,
     orbitBadge1Enabled: true,
     orbitBadge1Title: 'CapCut & Lovable',

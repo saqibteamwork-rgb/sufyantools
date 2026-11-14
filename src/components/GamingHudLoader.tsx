@@ -93,7 +93,7 @@ export function GamingHudLoader() {
           {/* Central Portrait / Core Orb */}
           <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-white/90 shadow-[0_0_24px_rgba(236,72,153,0.65)] bg-slate-900 flex items-center justify-center">
             <img
-              src="https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png"
+              src="https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png"
               alt="Sufan"
               className="w-full h-full object-cover object-top"
               onError={(e) => {

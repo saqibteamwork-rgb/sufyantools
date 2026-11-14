@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
   const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const effectiveCanonical = `${origin}/contact`;
-  const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
+  const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png';
   const brandOwner = siteConfig.banner?.mainTitle?.trim() || 'Sufan';
   const fullBrand = `${brandOwner} ${siteConfig.banner?.highlightTitle?.trim() || 'Agency Hub'}`.trim();
   const brand = siteConfig.footer?.brandName || fullBrand;

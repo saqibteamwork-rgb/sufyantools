@@ -77,7 +77,7 @@ export const MobileStepByStepDrawer: React.FC<MobileStepByStepDrawerProps> = ({
   onToggleSound,
   vipUser,
   primaryWaNumber,
-  portraitUrl = 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
+  portraitUrl = 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png',
   brandOwnerName,
   brandAccentName
 }) => {
@@ -193,7 +193,7 @@ export const MobileStepByStepDrawer: React.FC<MobileStepByStepDrawerProps> = ({
                   className="w-12 h-12 rounded-full object-cover border-2 border-white/80 shadow-md"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src =
-                      'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png';
+                      'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png';
                   }}
                 />
                 <span className="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-slate-900" />

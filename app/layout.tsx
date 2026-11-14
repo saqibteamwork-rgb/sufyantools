@@ -95,7 +95,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png"
+          href="https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png"
           fetchPriority="high"
         />
 

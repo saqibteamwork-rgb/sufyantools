@@ -5664,7 +5664,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                     presets={[
                       {
                         label: 'Sufan Official Pic',
-                        url: 'https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png',
+                        url: 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png',
                       },
                       {
                         label: 'Creative Studio Avatar',

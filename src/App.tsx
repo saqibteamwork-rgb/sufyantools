@@ -3859,7 +3859,7 @@ export default function App({
                   <div className="flex flex-col items-center text-center flex-shrink-0 space-y-2">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl p-1.5 bg-white shadow-xl border-2 border-pink-300 relative">
                       <img
-                        src={siteConfig.banner.portraitUrl || "https://ik.imagekit.io/mrsaqib/mrsaqib242-img25_7oG52NZUY.png"}
+                        src={siteConfig.banner.portraitUrl || "https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png"}
                         alt={brandOwnerName}
                         className="w-full h-full object-cover object-[center_15%] rounded-2xl"
                       />
