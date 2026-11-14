@@ -86,7 +86,7 @@ export interface TranslationDictionary {
 
 export const TRANSLATIONS: Record<SupportedLang, TranslationDictionary> = {
   en: {
-    brandSub: 'SAQIB VISUALS • PREMIUM SERVICES',
+    brandSub: 'SUFYAN TOOLS • PREMIUM SERVICES',
     navStore: 'Store',
     navTools: 'Web Tools',
     navAbout: 'About',

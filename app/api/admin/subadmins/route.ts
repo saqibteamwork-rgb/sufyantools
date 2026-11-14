@@ -30,7 +30,7 @@ export async function GET(req: Request) {
     return NextResponse.json({
       success: true,
       admins: result.admins,
-      currentSuperadmin: auth.payload?.username || 'saqib',
+      currentSuperadmin: auth.payload?.username || 'sufyan',
     });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : 'Internal Server Error';
@@ -76,7 +76,7 @@ export async function POST(req: Request) {
       username,
       password,
       permissions,
-      auth.payload?.username || 'saqib'
+      auth.payload?.username || 'sufyan'
     );
 
     if (!result.success) {

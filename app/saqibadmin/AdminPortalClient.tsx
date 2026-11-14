@@ -241,7 +241,7 @@ export default function AdminPortalClient({
               Admin Security Vault
             </h1>
             <p className="text-xs text-slate-400 mt-1.5 font-medium">
-              Muhammad Saqib Visuals Hub • Command Center
+              Sufyan Tools Hub • Command Center
             </p>
           </div>
 
@@ -359,7 +359,7 @@ export default function AdminPortalClient({
 
       {/* Footer Info */}
       <div className="w-full max-w-md text-center z-10 text-[11px] text-slate-500 font-mono">
-        © 2026 Muhammad Saqib • All Rights Reserved
+        © 2026 Sufyan Tools Hub • All Rights Reserved
       </div>
     </div>
   );

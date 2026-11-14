@@ -505,7 +505,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
 
   // Sub-Admin RBAC Identity & Granular Permissions State
   const [currentAdminRole, setCurrentAdminRole] = useState<'superadmin' | 'subadmin' | 'admin'>('superadmin');
-  const [currentAdminUser, setCurrentAdminUser] = useState<string>('saqib');
+  const [currentAdminUser, setCurrentAdminUser] = useState<string>('sufyan');
   const [adminPermissions, setAdminPermissions] = useState<{
     manage_services: boolean;
     manage_tools: boolean;
@@ -544,7 +544,11 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
     loadAdminSession();
   }, []);
 
-  const isSuperadmin = currentAdminRole === 'superadmin' || currentAdminUser.toLowerCase() === 'saqib';
+  const isSuperadmin =
+    currentAdminRole === 'superadmin' ||
+    currentAdminUser.toLowerCase() === 'sufyan' ||
+    currentAdminUser.toLowerCase() === 'sufan' ||
+    currentAdminUser.toLowerCase() === 'saqib';
   const canManageServices = isSuperadmin || Boolean(adminPermissions.manage_services);
   const canManageTools = isSuperadmin || Boolean(adminPermissions.manage_tools);
   const canManageOrders = isSuperadmin || Boolean(adminPermissions.manage_orders);
@@ -1170,8 +1174,8 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
         : isMeezan
         ? '🏦 0% Raast IBFT'
         : '⚡ Instant Auto-Verify',
-      accountTitle: 'Muhammad Saqib',
-      accountNumber: isCrypto ? 'TRC20: WhatsApp for UID' : '0347-8936242',
+      accountTitle: 'Sufyan',
+      accountNumber: isCrypto ? 'TRC20: WhatsApp for UID' : '0306-9120355',
       extraInfo: isCrypto
         ? 'Send USDT via TRC20 and upload receipt screenshot'
         : 'Send payment and upload screenshot for instant verification',
@@ -1248,7 +1252,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
         badgeText: 'ALL SERVICES AVAILABLE HERE',
         title: 'Need Custom AI Credits, Ad Agency Accounts, NADRA/CDR Info, or USDT?',
         description:
-          'Message Muhammad Saqib directly on WhatsApp (+92 347 8936242) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery.',
+          'Message Sufyan directly on WhatsApp (+92 306 9120355) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery.',
         style: 'rose',
         position: 'below_services',
         primaryBtnEnabled: true,
@@ -1344,7 +1348,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
         badgeText: '24/7 ONLINE • AVERAGE 2 MIN REPLY',
         title: 'Have a Special Request, Need Fast Replacement, or Custom AI Plan?',
         description:
-          'Muhammad Saqib is online right now! Message directly for custom enterprise bundles, special bulk pricing, or instant assistance.',
+          'Sufyan is online right now! Message directly for custom enterprise bundles, special bulk pricing, or instant assistance.',
         style: 'emerald',
         position: 'below_services',
         primaryBtnEnabled: true,
@@ -1393,7 +1397,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
           badgeText: 'NEW PROMOTIONAL DEAL',
           title: 'Special Custom Offer & Exclusive Wholesale Deals',
           description:
-            'Message Muhammad Saqib directly on WhatsApp (+92 347 8936242) for wholesale reseller rates, instant activation, and replacement warranty.',
+            'Message Sufyan directly on WhatsApp (+92 306 9120355) for wholesale reseller rates, instant activation, and replacement warranty.',
           style: 'rose',
           position: 'below_services',
           primaryBtnEnabled: true,
@@ -5027,8 +5031,8 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                       <button
                         type="button"
                         onClick={() => {
-                          const main = siteConfig.banner.mainTitle?.trim() || 'Muhammad Saqib';
-                          const accent = siteConfig.banner.highlightTitle?.trim().replace(/^[—\-\s]+/, '') || 'Visuals Hub';
+                          const main = siteConfig.banner.mainTitle?.trim() || 'Sufan';
+                          const accent = siteConfig.banner.highlightTitle?.trim().replace(/^[—\-\s]+/, '') || 'Tools Hub';
                           onUpdateSiteConfig((prev) => ({
                             ...prev,
                             banner: {
@@ -5188,7 +5192,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                               onChange={(e) => {
                                 const newAccent = e.target.value;
                                 const cleanAccent = newAccent.trim().replace(/^[—\-\s]+/, '');
-                                const main = siteConfig.banner.mainTitle?.trim() || 'Muhammad Saqib';
+                                const main = siteConfig.banner.mainTitle?.trim() || 'Sufan';
                                 onUpdateSiteConfig((prev) => ({
                                   ...prev,
                                   banner: { 
@@ -5246,8 +5250,8 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                           <button
                             type="button"
                             onClick={() => {
-                              const main = siteConfig.banner.mainTitle?.trim() || 'Muhammad Saqib';
-                              const accent = siteConfig.banner.highlightTitle?.trim().replace(/^[—\-\s]+/, '') || 'Visuals Hub';
+                              const main = siteConfig.banner.mainTitle?.trim() || 'Sufan';
+                              const accent = siteConfig.banner.highlightTitle?.trim().replace(/^[—\-\s]+/, '') || 'Tools Hub';
                               onUpdateSiteConfig((prev) => ({
                                 ...prev,
                                 banner: {
@@ -6143,7 +6147,7 @@ export const AdminStepByStepSettingsHub: React.FC<AdminStepByStepSettingsHubProp
                             onChange={(e) =>
                               handleUpdatePromoBannerField(activeBanner.id, 'description', e.target.value)
                             }
-                            placeholder="Message Muhammad Saqib directly on WhatsApp (+92 347 8936242) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery."
+                            placeholder="Message Sufyan directly on WhatsApp (+92 306 9120355) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery."
                             className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 font-medium text-xs text-slate-900 focus:outline-none focus:border-pink-500"
                           />
                         </div>

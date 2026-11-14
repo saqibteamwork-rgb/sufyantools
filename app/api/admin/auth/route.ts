@@ -140,7 +140,7 @@ export async function GET(req: Request) {
     return NextResponse.json({
       authenticated: true,
       role: auth.payload?.role || 'admin',
-      username: auth.payload?.username || 'saqib',
+      username: auth.payload?.username || 'sufyan',
       permissions: auth.payload?.permissions || null,
       token_version: auth.payload?.token_version || 1,
     });

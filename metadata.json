@@ -1,6 +1,6 @@
 {
   "name": "Sufan Tools Hub",
-  "description": "SMM Store, CapCut Pro, AI Tools & SIM Info Hub by Muhammad Saqib.",
+  "description": "SMM Store, CapCut Pro, AI Tools & SIM Info Hub by Sufyan.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

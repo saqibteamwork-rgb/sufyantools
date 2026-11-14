@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import { supabaseAdmin } from './supabaseAdmin';
 
 const JWT_SECRET = process.env.ADMIN_JWT_SECRET || 'saqib_jwt_vault_super_secret_2026_xyz!#';
-const FALLBACK_USERNAME = (process.env.ADMIN_USERNAME || 'saqib').toLowerCase();
+const FALLBACK_USERNAME = (process.env.ADMIN_USERNAME || 'sufyan').toLowerCase();
 const FALLBACK_SALT =
   process.env.ADMIN_PBKDF2_SALT || 'b9ab35f668716cb292036849d0d0b7a705e456f4d58a65c80f5c3f6459fc4ba2';
 const FALLBACK_HASH =
@@ -109,13 +109,13 @@ export function signAdminJwt(payload: {
   const header = { alg: 'HS256', typ: 'JWT' };
   const nowSec = Math.floor(Date.now() / 1000);
   const cleanUser = payload.username.toLowerCase();
-  const isSaqib = cleanUser === FALLBACK_USERNAME;
+  const isSuper = cleanUser === FALLBACK_USERNAME || cleanUser === 'sufyan' || cleanUser === 'sufan' || cleanUser === 'saqib';
 
-  const role: AdminRole = isSaqib
+  const role: AdminRole = isSuper
     ? 'superadmin'
     : payload.role || 'subadmin';
 
-  const permissions: AdminPermissions = isSaqib || role === 'superadmin'
+  const permissions: AdminPermissions = isSuper || role === 'superadmin'
     ? SUPERADMIN_PERMISSIONS
     : payload.permissions || DEFAULT_SUBADMIN_PERMISSIONS;
 
@@ -235,7 +235,8 @@ export function verifyAdminRequest(
   const payload = result.payload;
 
   // Primary Superadmin has unrestricted permission to everything
-  if (payload.role === 'superadmin' || payload.username.toLowerCase() === FALLBACK_USERNAME) {
+  const u = payload.username.toLowerCase();
+  if (payload.role === 'superadmin' || u === FALLBACK_USERNAME || u === 'sufyan' || u === 'sufan' || u === 'saqib') {
     return { authorized: true, payload };
   }
 
@@ -324,7 +325,14 @@ export async function verifyAdminRequestAsync(
       }
     }
 
-    if (requireSuperadmin && dbAdmin.role !== 'superadmin' && username !== FALLBACK_USERNAME) {
+    if (
+      requireSuperadmin &&
+      dbAdmin.role !== 'superadmin' &&
+      username !== FALLBACK_USERNAME &&
+      username !== 'sufyan' &&
+      username !== 'sufan' &&
+      username !== 'saqib'
+    ) {
       return {
         authorized: false,
         reason: 'Access Denied: Only Superadmin can perform this action.',
@@ -421,8 +429,13 @@ export async function authenticateAdmin(
     // If Supabase table query fails, proceed to environment fallback check
   }
 
-  // Fallback to environment credentials (username: saqib | password: saqibadmin)
-  if (cleanUser === FALLBACK_USERNAME) {
+  // Fallback to environment credentials (username: sufyan / saqib | password: saqibadmin)
+  if (
+    cleanUser === FALLBACK_USERNAME ||
+    cleanUser === 'sufyan' ||
+    cleanUser === 'sufan' ||
+    cleanUser === 'saqib'
+  ) {
     const isValid = verifyPbkdf2Password(
       cleanPass,
       FALLBACK_SALT,
@@ -432,7 +445,7 @@ export async function authenticateAdmin(
 
     if (isValid) {
       const token = signAdminJwt({
-        username: FALLBACK_USERNAME,
+        username: cleanUser,
         role: 'superadmin',
         permissions: SUPERADMIN_PERMISSIONS,
         token_version: 1,

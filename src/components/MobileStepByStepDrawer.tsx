@@ -189,7 +189,7 @@ export const MobileStepByStepDrawer: React.FC<MobileStepByStepDrawerProps> = ({
               <div className="relative">
                 <img
                   src={portraitUrl}
-                  alt="Muhammad Saqib"
+                  alt="Sufyan"
                   className="w-12 h-12 rounded-full object-cover border-2 border-white/80 shadow-md"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src =
