@@ -24,9 +24,21 @@ export const metadata: Metadata = {
     title: 'Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools',
     description: 'Digital & AI Services, CapCut Pro, SMM Store & Web Tools by Sufan Tools Hub.',
     type: 'website',
+    images: [
+      {
+        url: 'https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png',
+        width: 1024,
+        height: 1536,
+        alt: 'Sufan Tools Hub',
+        type: 'image/jpeg',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools',
+    description: 'Digital & AI Services, CapCut Pro, SMM Store & Web Tools by Sufan Tools Hub.',
+    images: ['https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png'],
   },
 };
 
@@ -82,6 +94,15 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Sufan Tools Hub" />
+
+        {/* WhatsApp & Social Media OpenGraph Rich Preview Meta */}
+        <meta property="og:image" content="https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png" />
+        <meta property="og:image:secure_url" content="https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1536" />
+        <meta property="og:image:alt" content="Sufan Tools Hub" />
+        <meta name="twitter:image" content="https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png" />
 
         {/* Sonic-speed preconnect & dns-prefetch to zero out network latency */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

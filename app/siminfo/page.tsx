@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { getServerStoreData } from '@/src/lib/serverDataLoader';
+import { DEFAULT_SITE_SEO } from '@/src/types/siteConfig';
 import ClientStoreApp from '../ClientStoreApp';
 
 export const dynamic = 'force-dynamic';
@@ -7,6 +8,7 @@ export const revalidate = 0;
 
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
+  const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
   const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const canonical = `${origin}/siminfo`;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png';
@@ -28,13 +30,21 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: brand,
       images: [
         {
-          url: portrait,
-          width: 1200,
-          height: 630,
+          url: seo.ogImageUrl || portrait,
+          secureUrl: seo.ogImageUrl || portrait,
+          width: 1024,
+          height: 1536,
           alt: `SIM Info Records — ${brand}`,
+          type: 'image/jpeg',
         },
       ],
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `SIM Info & Telecommunication Records | ${brand}`,
+      description: `Official SIM Database & franchise network lookup service.`,
+      images: [seo.ogImageUrl || portrait],
     },
   };
 }

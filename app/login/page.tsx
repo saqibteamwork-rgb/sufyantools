@@ -9,6 +9,7 @@ export const revalidate = 0;
 // Dynamic Server-Side Generated SEO Metadata for VIP Login & Wallet Portal
 export async function generateMetadata(): Promise<Metadata> {
   const { siteConfig } = await getServerStoreData();
+  const seo = { ...DEFAULT_SITE_SEO, ...(siteConfig.seo || {}) };
   const origin = process.env.APP_URL || 'https://sufantools.vercel.app';
   const effectiveCanonical = `${origin}/login`;
   const portrait = siteConfig.banner?.portraitUrl || 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png';
@@ -34,10 +35,12 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: brand,
       images: [
         {
-          url: portrait,
-          width: 1200,
-          height: 630,
+          url: seo.ogImageUrl || portrait,
+          secureUrl: seo.ogImageUrl || portrait,
+          width: 1024,
+          height: 1536,
           alt: `VIP Client Login — ${brand}`,
+          type: 'image/jpeg',
         },
       ],
       type: 'website',
@@ -46,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: `VIP Client Login | ${brand}`,
       description: `Secure client login and live wallet balance management.`,
-      images: [portrait],
+      images: [seo.ogImageUrl || portrait],
     },
   };
 }

@@ -5,7 +5,7 @@
     "ogTitle": "Sufan Tools Hub — Digital & AI Services & SMM Store",
     "keywords": "Sufan Tools, Sufan Tools Hub, Sufyan Tools, CapCut Pro Pakistan, SMM Panel Pakistan, Lovable Pro Account, Gemini 18M Pro, ChatGPT Plus & Claude, Pak SIM Database Live, SIM Tracker 2026, NADRA Verification FRC, TikTok Agency Accounts UK USA, Fast USDT EasyPaisa Delivery",
     "metaTitle": "Sufan Tools Hub — Digital & AI Services, SMM Store & Web Tools",
-    "ogImageUrl": "https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png",
+    "ogImageUrl": "https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png",
     "schemaType": "WebApplication",
     "robotsIndex": true,
     "twitterCard": "summary_large_image",
@@ -17,13 +17,13 @@
   },
   "banner": {
     "badgeText": "🔥 ALL DIGITAL, AI, SMM & NADRA SERVICES LIVE 24/7 (VERIFIED ACTIVE)",
-    "mainTitle": "𝙎𝙐𝙁𝘼𝙉 𝙏𝙊𝙊𝙇𝙎 ",
+    "mainTitle": "𝙎𝙐𝙁YAN 𝙏𝙊𝙊𝙇𝙎 ",
     "description": "Get Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT, Claude, Muse AI 1B & ElevenLabs, TikTok UK/USA & Ad Agency Accounts, Franchise SIM/CDR/IMEI Tracking, NADRA FRC/Passport Records & USDT/Video/Graphics!",
-    "portraitUrl": "https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png",
+    "portraitUrl": "https://ik.imagekit.io/ws9mlpwdsj/saqib-hub/portrait/img-1794597035375-213734_zNOa6BRQO.png",
     "showTopStrip": true,
     "showBadgeText": true,
     "showMainTitle": true,
-    "topStripTitle": "SUFAN TOOLS OFFICIAL HUB",
+    "topStripTitle": "𝙎𝙐𝙁YAN 𝙏𝙊𝙊𝙇𝙎 • 𝙃𝙐𝘽",
     "highlightTitle": "𝙃𝙐𝘽",
     "orbitBadge1Sub": "PRO UNLOCKED",
     "orbitBadge2Sub": "GEMINI • CLAUDE",
@@ -46,19 +46,19 @@
     "showPortraitOrbitBadges": true
   },
   "footer": {
-    "brandName": "🚀 Sufan Tools Hub",
+    "brandName": "🚀TOOLSA",
     "showQuickLinks": true,
     "copyrightTagline": "24/7 Instant Delivery • 100% Full Replacement Warranty"
   },
   "contact": {
     "supportEmail": "support@sufantools.com",
-    "officialWebsiteUrl": "https://sufantools.vercel.app",
-    "whatsappWidgetName": "Sufan Tools",
-    "whatsappNumberClean": "923069120355",
-    "officialWebsiteLabel": "sufantools.vercel.app",
-    "whatsappWidgetAvatar": "https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png",
+    "officialWebsiteUrl": "https://toolsa.vercel.app",
+    "whatsappWidgetName": "TOOLSA",
+    "whatsappNumberClean": "923420580154",
+    "officialWebsiteLabel": "toolsa.vercel.app",
+    "whatsappWidgetAvatar": "https://ik.imagekit.io/ws9mlpwdsj/saqib-hub/whatsapp/img-1794677548704-Toolsa_Gold_Shopping_Logo_JLofsT74P.png",
     "whatsappWidgetStatus": "Typically replies in ~2 minutes ⚡",
-    "whatsappNumberDisplay": "+92 306 9120355",
+    "whatsappNumberDisplay": "+92 342 0580154",
     "whatsappWidgetEnabled": true,
     "whatsappDefaultMessage": "Assalam-o-Alaikum Sufan Tools! Mujhe apki services chahiye.",
     "whatsappWidgetGreeting": "Assalam-o-Alaikum! 👋 Welcome to Sufan Tools Hub.<br/>How can I help you today with CapCut Pro, AI Tools, TikTok Ads or Nadra services?",
@@ -72,7 +72,7 @@
         "icon": "fa-brands fa-instagram",
         "label": "Instagram",
         "handle": "@sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "instagram",
         "colorGrad": "from-amber-300 via-pink-500 to-purple-600"
       },
@@ -82,7 +82,7 @@
         "icon": "fa-brands fa-tiktok",
         "label": "TikTok",
         "handle": "@sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "tiktok",
         "colorGrad": "from-slate-900 to-slate-800"
       },
@@ -92,7 +92,7 @@
         "icon": "fa-brands fa-facebook-f",
         "label": "Facebook",
         "handle": "sufan ",
-        "enabled": true,
+        "enabled": false,
         "platform": "facebook",
         "colorGrad": "from-blue-600 to-indigo-600"
       },
@@ -102,7 +102,7 @@
         "icon": "fa-brands fa-snapchat",
         "label": "Snapchat",
         "handle": "sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "snapchat",
         "colorGrad": "from-amber-400 to-yellow-500"
       },
@@ -112,7 +112,7 @@
         "icon": "fa-brands fa-youtube",
         "label": "YouTube",
         "handle": "@sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "youtube",
         "colorGrad": "from-red-500 to-rose-600"
       },
@@ -122,7 +122,7 @@
         "icon": "fa-brands fa-telegram",
         "label": "Telegram",
         "handle": "@sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "telegram",
         "colorGrad": "from-sky-400 to-blue-500"
       },
@@ -132,7 +132,7 @@
         "icon": "fa-brands fa-whatsapp",
         "label": "WhatsApp Channel",
         "handle": "sufantools",
-        "enabled": true,
+        "enabled": false,
         "platform": "whatsapp_channel",
         "colorGrad": "from-emerald-500 to-teal-600"
       },
@@ -280,9 +280,9 @@
     "badgeText": "🔥 SPECIAL 20% DISCOUNT",
     "popupType": "discount",
     "showImage": true,
-    "couponCode": "SUFYAN20",
+    "couponCode": "SAQIB20",
     "showCoupon": true,
-    "description": "Order any AI Pro Tool, CapCut Pro, or TikTok Agency Account right now and enjoy an instant 20% discount on your first order. WhatsApp Sufyan directly!",
+    "description": "Order any AI Pro Tool, CapCut Pro, or TikTok Agency Account right now and enjoy an instant 20% discount on your first order. WhatsApp Saqib directly!",
     "showCountdown": true,
     "primaryBtnText": "Claim 20% Off on WhatsApp",
     "countdownMinutes": 15,
@@ -322,7 +322,7 @@
       "position": "below_services",
       "badgeIcon": "fa-solid fa-bolt",
       "badgeText": "ALL SERVICES AVAILABLE HERE",
-      "description": "Message Sufyan directly on WhatsApp (+92 306 9120355) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery.",
+      "description": "Message Muhammad Saqib directly on WhatsApp (+92 347 8936242) for wholesale reseller rates, JazzCash / EasyPaisa payment, and instant delivery.",
       "primaryBtnIcon": "fa-brands fa-whatsapp",
       "primaryBtnText": "Deal on WhatsApp",
       "primaryBtnAction": "whatsapp",
@@ -335,7 +335,7 @@
   ],
   "paymentMethods": [
     {
-      "id": "JazzCash",
+      "id": "esypasa",
       "grad": "from-rose-500 to-red-600",
       "icon": "fa-solid fa-wallet",
       "label": "JazzCash Mobile Account",
@@ -343,8 +343,8 @@
       "enabled": true,
       "shortTag": "🔥 Fast Approval",
       "extraInfo": "Send via JazzCash App or Raast ID (03236396844)",
-      "accountTitle": "Sapora BiBi",
-      "accountNumber": "0323-6396844"
+      "accountTitle": "Abu sufyan",
+      "accountNumber": "03113233272"
     },
     {
       "id": "SadaPay / Bank",
@@ -352,11 +352,11 @@
       "icon": "fa-solid fa-building-columns",
       "label": "SadaPay / Raast IBFT",
       "badgeBg": "bg-cyan-100 text-cyan-800 border-cyan-300",
-      "enabled": true,
+      "enabled": false,
       "shortTag": "🏦 0% Fee Raast",
       "extraInfo": "Transfer from any Bank App via Raast / SadaPay",
-      "accountTitle": "Hafiz Zafar Iqbal",
-      "accountNumber": "0306-9120355"
+      "accountTitle": "Abu sufyan",
+      "accountNumber": "03113233272"
     },
     {
       "id": "Binance / USDT",
@@ -376,7 +376,7 @@
       "icon": "fa-solid fa-building-columns",
       "label": "Meezan Bank Account",
       "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-300",
-      "enabled": true,
+      "enabled": false,
       "shortTag": "🏦 0% Raast IBFT",
       "extraInfo": "Send payment and upload screenshot for instant verification",
       "accountTitle": "Hafiz Zafar Iqbal",

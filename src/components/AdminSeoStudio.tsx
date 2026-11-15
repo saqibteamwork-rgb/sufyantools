@@ -144,6 +144,8 @@ export const AdminSeoStudio: React.FC<AdminSeoStudioProps> = ({
 <meta property="og:title" content="${seo.ogTitle || seo.metaTitle}" />
 <meta property="og:description" content="${seo.ogDescription || seo.metaDescription}" />
 <meta property="og:image" content="${seo.ogImageUrl || siteConfig.banner.portraitUrl}" />
+<meta property="og:image:secure_url" content="${seo.ogImageUrl || siteConfig.banner.portraitUrl}" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:site_name" content="${siteConfig.footer.brandName || 'Sufan Tools Hub'}" />
 
 <!-- Twitter / X -->

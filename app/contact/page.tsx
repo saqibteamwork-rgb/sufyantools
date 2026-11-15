@@ -37,9 +37,11 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: seo.ogImageUrl || portrait,
-          width: 1200,
-          height: 630,
+          secureUrl: seo.ogImageUrl || portrait,
+          width: 1024,
+          height: 1536,
           alt: `Contact ${brand}`,
+          type: 'image/jpeg',
         },
       ],
       type: 'website',

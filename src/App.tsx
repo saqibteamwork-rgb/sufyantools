@@ -478,6 +478,10 @@ export default function App({
     setMetaTag('og:type', seo.ogType || 'website', true);
     setMetaTag('og:url', effectiveCanonical, true);
     setMetaTag('og:image', seo.ogImageUrl || siteConfig.banner.portraitUrl || '', true);
+    setMetaTag('og:image:secure_url', seo.ogImageUrl || siteConfig.banner.portraitUrl || '', true);
+    setMetaTag('og:image:type', 'image/jpeg', true);
+    setMetaTag('og:image:width', '1024', true);
+    setMetaTag('og:image:height', '1536', true);
     setMetaTag('og:site_name', siteConfig.footer.brandName || 'Sufan Tools Hub', true);
 
     // Twitter / X Tags

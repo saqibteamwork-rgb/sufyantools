@@ -435,7 +435,7 @@ VALUES (
     "ogTitle": "Muhammad Saqib — Saqib Visuals | AI Accounts & SMM Services",
     "keywords": "Muhammad Saqib, Saqib Visuals, CapCut Pro Pakistan, SMM Panel Pakistan, Lovable Pro Account, Gemini 18M Pro, ChatGPT Plus & Claude, Pak SIM Database Live, SIM Tracker 2026, NADRA Verification FRC, TikTok Agency Accounts UK USA, Fast USDT EasyPaisa Delivery",
     "metaTitle": "Muhammad Saqib — Saqib Visuals | AI Accounts, SMM & Digital Services",
-    "ogImageUrl": "https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png",
+    "ogImageUrl": "https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png",
     "schemaType": "WebApplication",
     "robotsIndex": true,
     "twitterCard": "summary_large_image",

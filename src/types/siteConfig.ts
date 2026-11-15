@@ -264,7 +264,7 @@ export const DEFAULT_SITE_SEO: SiteSeoConfig = {
   ogType: 'website',
   ogTitle: 'Sufan Tools Hub — Digital & AI Services & SMM Store',
   ogDescription: 'Instant CapCut Pro, Lovable Pro, Gemini 18M, ChatGPT Plus, TikTok UK/USA Agency Accounts, Franchise SIM Records & SMM Services by Sufyan.',
-  ogImageUrl: 'https://ik.imagekit.io/mrsaqib/image_uuc03rwq7.png',
+  ogImageUrl: 'https://ik.imagekit.io/mrsaqib/image_tMPGW9o92.png',
   twitterCard: 'summary_large_image',
   twitterCreator: '@mrsaqib242',
   schemaType: 'WebApplication'
