@@ -864,6 +864,14 @@ export async function updateAdminCredentials(
   const nextVersion = ((currentRecord?.token_version) || 1) + 1;
 
   try {
+    // 1. Check if the target username already exists in admin_vault
+    const { data: existingTarget } = await supabaseAdmin
+      .from('admin_vault')
+      .select('id, username, token_version, role, permissions')
+      .eq('username', cleanNewUser)
+      .maybeSingle();
+
+    // 2. If renaming from an old username, remove the old username so it doesn't linger
     if (currentMatchedUser && currentMatchedUser !== cleanNewUser) {
       await supabaseAdmin
         .from('admin_vault')
@@ -872,40 +880,91 @@ export async function updateAdminCredentials(
       markUserRevokedLocally(currentMatchedUser);
     }
 
-    const { error: upsertErr } = await supabaseAdmin
-      .from('admin_vault')
-      .upsert({
-        username: cleanNewUser,
-        password_hash: newHash,
-        salt: newSalt,
-        iterations: 100000,
-        algorithm: 'sha512',
-        role: currentRecord?.role || (cleanNewUser === FALLBACK_USERNAME ? 'superadmin' : 'subadmin'),
-        permissions: currentRecord?.permissions || (cleanNewUser === FALLBACK_USERNAME ? SUPERADMIN_PERMISSIONS : DEFAULT_SUBADMIN_PERMISSIONS),
-        token_version: nextVersion,
-        is_active: true,
-        updated_at: new Date().toISOString(),
-      });
+    const assignedRole: AdminRole = 'superadmin';
+    const assignedPermissions: AdminPermissions = SUPERADMIN_PERMISSIONS;
+    const targetVersion = Math.max(
+      existingTarget?.token_version || 0,
+      currentRecord?.token_version || 0,
+      1
+    ) + 1;
 
-    if (upsertErr) {
-      return { success: false, error: `Database update failed: ${upsertErr.message}` };
+    let writeError = null;
+
+    if (existingTarget?.id) {
+      // Target username already exists in database -> UPDATE it in-place and elevate to superadmin
+      const { error } = await supabaseAdmin
+        .from('admin_vault')
+        .update({
+          password_hash: newHash,
+          salt: newSalt,
+          iterations: 100000,
+          algorithm: 'sha512',
+          role: assignedRole,
+          permissions: assignedPermissions,
+          token_version: targetVersion,
+          is_active: true,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', existingTarget.id);
+      writeError = error;
+    } else if (currentRecord?.id) {
+      // Target username does not exist, but old admin record exists -> Rename old record in-place
+      const { error } = await supabaseAdmin
+        .from('admin_vault')
+        .update({
+          username: cleanNewUser,
+          password_hash: newHash,
+          salt: newSalt,
+          iterations: 100000,
+          algorithm: 'sha512',
+          role: assignedRole,
+          permissions: assignedPermissions,
+          token_version: targetVersion,
+          is_active: true,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', currentRecord.id);
+      writeError = error;
+    } else {
+      // Clean fresh insert into database
+      const { error } = await supabaseAdmin
+        .from('admin_vault')
+        .insert({
+          username: cleanNewUser,
+          password_hash: newHash,
+          salt: newSalt,
+          iterations: 100000,
+          algorithm: 'sha512',
+          role: assignedRole,
+          permissions: assignedPermissions,
+          token_version: targetVersion,
+          is_active: true,
+          created_by: 'superadmin',
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        });
+      writeError = error;
     }
+
+    if (writeError) {
+      return { success: false, error: `Database update failed: ${writeError.message}` };
+    }
+
+    const newToken = signAdminJwt({
+      username: cleanNewUser,
+      role: assignedRole,
+      permissions: assignedPermissions,
+      token_version: targetVersion,
+    });
+
+    return {
+      success: true,
+      message: `Admin credentials updated successfully! New username: "${cleanNewUser}"`,
+      token: newToken,
+      username: cleanNewUser,
+    };
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : 'Unknown database error';
     return { success: false, error: `Failed to save to admin vault: ${msg}` };
   }
-
-  const newToken = signAdminJwt({
-    username: cleanNewUser,
-    role: currentRecord?.role || (cleanNewUser === FALLBACK_USERNAME ? 'superadmin' : 'subadmin'),
-    permissions: currentRecord?.permissions || (cleanNewUser === FALLBACK_USERNAME ? SUPERADMIN_PERMISSIONS : DEFAULT_SUBADMIN_PERMISSIONS),
-    token_version: nextVersion,
-  });
-
-  return {
-    success: true,
-    message: `Admin credentials updated successfully! New username: "${cleanNewUser}"`,
-    token: newToken,
-    username: cleanNewUser,
-  };
 }
